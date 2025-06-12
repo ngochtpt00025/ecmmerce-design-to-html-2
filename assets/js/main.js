@@ -11,4 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
             headerMenu.classList.remove('active');
         }
     });
+
+    var elem = document.querySelector('.carousel');
+    var flkty = new Flickity(elem, {
+        autoPlay: 3000,
+        wrapAround: true,
+        prevNextButtons: false,
+        pageDots: true,
+    });
 });
