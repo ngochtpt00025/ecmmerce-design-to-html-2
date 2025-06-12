@@ -9,7 +9,7 @@
 
 .header {
     background-color: #ffffff;
-    width: 1920px;
+    width: 100%;
     height: 84px;
     display: flex;
     align-items: center;
@@ -94,3 +94,179 @@
     align-items: center;
     left: 100%;
 }
+.mobile-menu-btn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #131728;
+    margin-right: 5px;
+}
+
+.desktop-logo {
+    display: block;
+}
+
+.mobile-logo {
+    display: none;
+}
+/* Media Queries
+@media screen and (width<= 1536px) {
+    .header {
+        width: 100%;
+    }
+    .header-container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .header-menu {
+        gap: 40px;
+    }
+    .header-menu-item-link {
+        font-size: 14px;
+    }
+    .shop-name {
+        font-size: 38px;
+    }
+} */
+
+/* Desktop (1920px) */
+@media screen and (min-width: 1920px) {
+    .header {
+        width: 1920px;
+    }
+}
+
+/* Laptop (1440px - 1919px) */
+@media screen and (max-width: 1919px) {
+    .header {
+        width: 100%;
+    }
+    .header-container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .header-menu {
+        gap: 40px;
+    }
+    .header-menu-item-link {
+        font-size: 14px;
+    }
+    .shop-name {
+        font-size: 38px;
+    }
+}
+
+/* iPad/Tablets (1024px - 1439px) */
+@media screen and (max-width: 1439px) {
+    .header {
+        width: 100%;
+    }
+    .header-container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .header-menu {
+        gap: 25px;
+    }
+    .shop-name {
+        font-size: 30px;
+    }
+    .header-menu-item-link {
+        font-size: 12px;
+    }
+}
+
+/* iPad/Tablets nhỏ (768px - 1023px) */
+@media screen and (max-width: 1023px) {
+    .header {
+        width: 100%;
+    }
+    .header-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .header-menu {
+        gap: 10px;
+    }
+    .header-menu-item-link {
+        font-size: 12px;
+    }
+    .shop-name {
+        padding: 0;
+        font-size: 30px;
+    }
+    .icon svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Mobile/iPhone (767px trở xuống) */
+@media screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+        padding: 15px 0;
+    }
+    .header-container {
+        margin-left: 15px;
+        margin-right: 15px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header-menu {
+        display: none;
+        position: fixed;
+        top: 84px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+    
+    .header-menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .desktop-logo {
+        display: none;
+    }
+    .mobile-logo {
+        display: block;
+    }
+    
+    .shop-name {
+        font-size: 28px;
+        padding: 0;
+    }
+    
+    .header-icon {
+        width: auto;
+    }
+    
+    .iconnnnn {
+        width: auto;
+        justify-content: flex-end;
+        margin-right: 0;
+    }
+    
+    .header-menu-item-link {
+        font-size: 14px;
+    }
+    
+    .icon svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
