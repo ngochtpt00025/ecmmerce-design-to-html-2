@@ -7,6 +7,7 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* header */
 .header {
     background-color: #ffffff;
     width: 100%;
@@ -14,6 +15,7 @@
     display: flex;
     align-items: center;
 }
+
 .header-container {
     margin-left: 50px;
     margin-right: 50px;
@@ -22,6 +24,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .header-menu {
     padding: 0;
     margin: 0;
@@ -32,6 +35,7 @@
     gap: 55px;
     float: left;
 }
+
 .header-menu-item-link {
     text-decoration: none;
     color: #131728;
@@ -42,10 +46,12 @@
     letter-spacing: 0%;
     transition: all .2s ease;
 }
+
 .header-menu-item-link:hover {
     color: #74d7e6;
 }
-.shop-name{
+
+.shop-name {
     padding-top: 23px;
     padding-bottom: 27px;
     font-family: Poppins;
@@ -54,12 +60,14 @@
     line-height: 100%;
     letter-spacing: -0.05em;
 }
+
 .header-icon {
     flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+
 .iconnnnn {
     margin-right: 8px;
     width: 164px;
@@ -69,13 +77,21 @@
     align-items: end;
     gap: 19px;
 }
+
 .icon {
     position: relative;
 }
+
 .icon svg {
     width: 24px;
     height: 24px;
+    transition: all .3s ease-in-out;
 }
+.icon svg:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+}
+
 .badgee {
     width: 18px;
     height: 18px;
@@ -94,6 +110,7 @@
     align-items: center;
     left: 100%;
 }
+
 .mobile-menu-btn {
     display: none;
     font-size: 24px;
@@ -109,6 +126,10 @@
 .mobile-logo {
     display: none;
 }
+
+/* end header */
+
+/* banner */
 .carousel {
     width: 100%;
 }
@@ -124,15 +145,23 @@
     display: flex;
     align-items: center;
 }
+
 .banner-image {
     text-align: center;
     position: relative;
     width: 100%;
 }
+
 .banner-image img {
+    opacity: 0.8;
     width: 100%;
     object-fit: cover;
+    transition: all .3s;
 }
+.banner-image img:hover {
+    opacity: 1;
+}
+
 .banner-content {
     position: absolute;
     left: 269px;
@@ -142,6 +171,7 @@
     flex-direction: column;
     justify-content: center;
 }
+
 .banner-content_1 {
     font-family: Poppins;
     font-weight: 500;
@@ -149,14 +179,16 @@
     line-height: 100%;
     letter-spacing: 0%;
 }
+
 .banner-content_2 {
     font-family: Poppins;
     font-weight: 700;
     font-size: 70px;
     line-height: 100%;
     letter-spacing: 0%;
-    
+
 }
+
 .btn-shopping-now {
     max-width: 229px;
     text-decoration: none;
@@ -168,23 +200,120 @@
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
+    transition: all .3s;
 }
+.btn-shopping-now:hover {
+    background-color: transparent;
+    color: black;
+    outline: 2px solid #ffffff;
+}
+
 /* position dots in carousel */
 .flickity-page-dots {
     bottom: 0px;
-  }
-  /* white circles */
-  .flickity-page-dots .dot {
+}
+
+/* white circles */
+.flickity-page-dots .dot {
     width: 12px;
     height: 12px;
     opacity: 1;
     background: transparent;
     border: 2px solid white;
-  }
-  /* fill-in selected dot */
-  .flickity-page-dots .dot.is-selected {
+}
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
     background: white;
-  }
+}
+
+/* end banner */
+
+/* shop by categories */
+
+.shop-by-categories {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.container {
+    max-width: 1440px !important;
+    margin: 0 auto;
+}
+
+.section-title {
+    width: 100%;
+}
+
+.section-title h3 {
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: bottom;
+    padding-bottom: 45px;
+}
+
+.list-categories {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.list-categories-items {
+    padding: 0;
+    margin: 0;
+}
+
+.list-categories-items a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+}
+
+.list-categories-items a img {
+    width: 100%;
+    max-height: 345px;
+    object-fit: fill;
+    border-radius: 50%;
+    transition: all .3s;
+}
+.list-categories-items a img:hover {
+    transform: scale(1.01);
+}
+
+.category-name {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #222222;
+}
+
+.category-count-item {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;   
+    color: #696969;
+}
+
+/* end shop by categories */
+
+
 /* Media Queries
 @media screen and (width<= 1536px) {
     .header {
@@ -210,6 +339,11 @@
     .header {
         width: 1920px;
     }
+
+    .container {
+        max-width: 1440px !important;
+        margin: 0 auto;
+    }
 }
 
 /* Laptop (1440px - 1919px) */
@@ -217,33 +351,68 @@
     .header {
         width: 100%;
     }
+
     .header-container {
         margin-left: 50px;
         margin-right: 50px;
     }
+
     .header-menu {
         gap: 40px;
     }
+
     .header-menu-item-link {
         font-size: 14px;
     }
+
     .shop-name {
         font-size: 38px;
     }
+
     .banner-content {
         left: 220px;
         gap: 20px;
     }
+
     .banner-content_1 {
         font-size: 16px;
     }
+
     .banner-content_2 {
         font-size: 55px;
     }
+
     .btn-shopping-now {
         max-width: 185px;
         padding: 15px 35px;
         font-size: 14px;
+    }
+
+    .container {
+        max-width: 1160px !important;
+        margin: 0 auto;
+    }
+
+    .list-categories {
+        gap: 15px;
+    }
+
+    .list-categories-items a img {
+        width: 100%;
+        max-height: 275px;
+        object-fit: fill;
+        border-radius: 50%;
+    }
+    .section-title h3 {
+        text-align: center;
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: bottom;
+        padding-bottom: 30px;
     }
 }
 
@@ -252,29 +421,37 @@
     .header {
         width: 100%;
     }
+
     .header-container {
         margin-left: 30px;
         margin-right: 30px;
     }
+
     .header-menu {
         gap: 25px;
     }
+
     .shop-name {
         font-size: 30px;
     }
+
     .header-menu-item-link {
         font-size: 12px;
     }
+
     .banner-content {
         left: 150px;
         gap: 15px;
     }
+
     .banner-content_1 {
         font-size: 14px;
     }
+
     .banner-content_2 {
         font-size: 45px;
     }
+
     .btn-shopping-now {
         max-width: 160px;
         padding: 12px 30px;
@@ -287,34 +464,43 @@
     .header {
         width: 100%;
     }
+
     .header-container {
         margin-left: 20px;
         margin-right: 20px;
     }
+
     .header-menu {
         gap: 10px;
     }
+
     .header-menu-item-link {
         font-size: 12px;
     }
+
     .shop-name {
         padding: 0;
         font-size: 30px;
     }
+
     .icon svg {
         width: 20px;
         height: 20px;
     }
+
     .banner-content {
         left: 100px;
         gap: 12px;
     }
+
     .banner-content_1 {
         font-size: 12px;
     }
+
     .banner-content_2 {
         font-size: 35px;
     }
+
     .btn-shopping-now {
         max-width: 140px;
         padding: 10px 25px;
@@ -328,6 +514,7 @@
         width: 100%;
         padding: 15px 0;
     }
+
     .header-container {
         margin-left: 15px;
         margin-right: 15px;
@@ -335,7 +522,7 @@
         justify-content: space-between;
         align-items: center;
     }
-    
+
     .header-menu {
         display: none;
         position: fixed;
@@ -344,51 +531,53 @@
         width: 100%;
         background: #fff;
         padding: 20px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         z-index: 1000;
     }
-    
+
     .header-menu.active {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 15px;
     }
-    
+
     .mobile-menu-btn {
         display: block;
     }
-    
+
     .desktop-logo {
         display: none;
     }
+
     .mobile-logo {
         display: block;
     }
-    
+
     .shop-name {
         font-size: 28px;
         padding: 0;
     }
-    
+
     .header-icon {
         width: auto;
     }
-    
+
     .iconnnnn {
         width: auto;
         justify-content: flex-end;
         margin-right: 0;
     }
-    
+
     .header-menu-item-link {
         font-size: 14px;
     }
-    
+
     .icon svg {
         width: 20px;
         height: 20px;
     }
+
     .banner-content {
         left: 50%;
         transform: translateX(-50%);
@@ -396,12 +585,15 @@
         gap: 10px;
         width: 80%;
     }
+
     .banner-content_1 {
         font-size: 12px;
     }
+
     .banner-content_2 {
         font-size: 28px;
     }
+
     .btn-shopping-now {
         max-width: 120px;
         padding: 8px 20px;
@@ -409,4 +601,3 @@
         margin: 0 auto;
     }
 }
-
