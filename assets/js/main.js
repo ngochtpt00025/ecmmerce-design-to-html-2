@@ -1,17 +1,19 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+    //header js
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const headerMenu = document.querySelector('.header-menu');
 
-    mobileMenuBtn.addEventListener('click', function() {
+    mobileMenuBtn.addEventListener('click', function () {
         headerMenu.classList.toggle('active');
     });
 
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         if (!headerMenu.contains(event.target) && !mobileMenuBtn.contains(event.target)) {
             headerMenu.classList.remove('active');
         }
     });
 
+    //slider flickity
     var elem = document.querySelector('.carousel');
     var flkty = new Flickity(elem, {
         autoPlay: 3000,
@@ -19,4 +21,19 @@ document.addEventListener('DOMContentLoaded', function() {
         prevNextButtons: false,
         pageDots: true,
     });
+
+    var flkty = new Flickity('.product-list', {
+        cellAlign: 'left',
+        contain: true,
+        groupCells: true,
+        pageDots: true,
+        wrapAround: true,
+        prevNextButtons: false,
+    });
+
+    // tooltip js
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
 });

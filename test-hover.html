@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.add-to-cart {
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.side-buttons {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.quick-view, .like {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.product-container:hover .overlay {
+  opacity: 1;
+}
+
+.product-container:hover .add-to-cart {
+  transform: translateY(0);
+}
+
+.product-container:hover .side-buttons {
+  transform: translateX(-100%) translateY(-50%);
+}
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <img src="herman-shoulder-bag.jpg" alt="Herman Shoulder Bag">
+        <div class="overlay">
+          <button class="add-to-cart">Add To Cart</button>
+          <div class="side-buttons">
+            <button class="quick-view">👁️</button>
+            <button class="like">❤️</button>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

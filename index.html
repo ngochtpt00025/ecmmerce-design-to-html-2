@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Kalles</title>
-    <link rel="stylesheet" href="/assets/css/style_index.css">
+    <link rel="stylesheet" href="./assets/css/style_index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -101,76 +101,1465 @@
             </div>
         </div>
     </header>
-    <main id="mainContent">
-        <section class="carousel"
-            data-flickity='{ "autoPlay": 3000, "wrapAround": true, "pageDots": true, "prevNextButtons": false }'>
-            <!-- Slide 1 -->
-            <div class="carousel-cell">
-                <div class="banner">
-                    <div class="banner-image">
-                        <img src="/assets/images/banner/banner_01.png" alt="Banner">
-                    </div>
-                    <div class="banner-content">
-                        <span class="banner-content_1">Spring - Summer 2025</span>
-                        <span class="banner-content_2">Lookbook Collection</span>
-                        <a href="#" class="btn-shopping-now">Shopping Now</a>
-                    </div>
+    <section class="carousel"
+        data-flickity='{ "autoPlay": 3000, "wrapAround": true, "pageDots": true, "prevNextButtons": false }'>
+        <div class="carousel-cell">
+            <div class="banner">
+                <div class="banner-image">
+                    <img src="/assets/images/banner/banner_01.png" alt="Banner">
+                </div>
+                <div class="banner-content">
+                    <span class="banner-content_1">Spring - Summer 2025</span>
+                    <span class="banner-content_2">Lookbook Collection</span>
+                    <a href="#" class="btn-shopping-now">Shopping Now</a>
                 </div>
             </div>
-            <!-- Slide 2 -->
-            <div class="carousel-cell">
-                <div class="banner">
-                    <div class="banner-image">
-                        <img src="/assets/images/banner/banner_01.png" alt="Banner">
-                    </div>
-                    <div class="banner-content">
-                        <span class="banner-content_1">Spring - Summer 2025</span>
-                        <span class="banner-content_2">Lookbook Collection</span>
-                        <a href="#" class="btn-shopping-now">Shopping Now</a>
-                    </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="banner">
+                <div class="banner-image">
+                    <img src="/assets/images/banner/banner_01.png" alt="Banner">
+                </div>
+                <div class="banner-content">
+                    <span class="banner-content_1">Spring - Summer 2025</span>
+                    <span class="banner-content_2">Lookbook Collection</span>
+                    <a href="#" class="btn-shopping-now">Shopping Now</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <section class="container">
         <section class="shop-by-categories">
-            <div class="container">
-                <div class="section-title">
-                    <h3>Shop By Categories</h3>
+            <div class="section-title">
+                <h3>Shop By Categories</h3>
+            </div>
+            <ul class="list-categories">
+                <li class="list-categories-items">
+                    <a href="#">
+                        <div class="image-container">
+                            <img src="./assets/images/categories/shoulder-bags.png" alt="Shoulder Bags"
+                                class="category-image">
+                        </div>
+                        <h3 class="category-name">Shoulder Bags</h3>
+                        <p class="item-count">15 Items</p>
+                    </a>
+                </li>
+                <li class="list-categories-items">
+                    <a href="#">
+                        <div class="image-container">
+                            <img src="./assets/images/categories/tote-bags.png" alt="Shoulder Bags"
+                                class="category-image">
+                        </div>
+                        <h3 class="category-name">Tote Bags</h3>
+                        <p class="item-count">18 Items</p>
+                    </a>
+                </li>
+                <li class="list-categories-items">
+                    <a href="#">
+                        <div class="image-container">
+                            <img src="./assets/images/categories/hand-bags.png" alt="Shoulder Bags"
+                                class="category-image">
+                        </div>
+                        <h3 class="category-name">Hand Bags</h3>
+                        <p class="item-count">22 Items</p>
+                    </a>
+                </li>
+                <li class="list-categories-items">
+                    <a href="#">
+                        <div class="image-container">
+                            <img src="./assets/images/categories/crossbody-bags.png" alt="Shoulder Bags"
+                                class="category-image">
+                        </div>
+                        <h3 class="category-name">Crossbody Bags</h3>
+                        <p class="item-count">22 Items</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="new-arrivals">
+            <div class="section-heading">
+                <h3>New Arrivals</h3>
+                <p>Here’s some of our most popular products people are in love with.</p>
+            </div>
+            <div class="carousel product-list">
+                <!--product 1-->
+                <div class="carousel-cell product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Herman-Shoulder-Bag.jpg"
+                                alt="Image">
+                            <img class="product-image-2" src="./assets/images/product/Herman-Shoulder-Bag-2.jpg"
+                                alt="Image">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Herman Shoulder Bag</a>
+                        <div class="product-price">
+                            <del class="price-original">$105.00</del>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <span class="badge-new">New</span>
+                        <!-- <span class="badge-sale">30%</span> -->
+                    </div>
                 </div>
-                <ul class="list-categories">
-                    <li class="list-categories-items">
-                        <a href="#">
-                            <img src="/assets/images/categories/shoulder-bags.png" alt="shoulder-bags">
-                            <span class="category-name">Shoulder Bags</span>
-                            <span class="category-count-item">15 items</span>
+                <!--product 2-->
+                <div class="carousel-cell product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Jana-Hollow-Out-Shoulder-Bag.jpg"
+                                alt="Image">
+                            <img class="product-image-2"
+                                src="./assets/images/product/Jana-Hollow-Out-Shoulder-Bag-2.jpg" alt="Image">
                         </a>
-                    </li>
-                    <li class="list-categories-items">
-                        <a href="#">
-                            <img src="/assets/images/categories/tote-bags.png" alt="shoulder-bags">
-                            <span class="category-name">Tote Bags</span>
-                            <span class="category-count-item">18 items</span>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Jana Hollow Out Shoulder Bag</a>
+                        <div class="product-price">
+                            <del>$60.00</del>
+                            <ins>$45.00</ins>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <!-- <span class="badge-new">New</span> -->
+                        <span class="badge-sale">30%</span>
+                    </div>
+                </div>
+                <!--product 3-->
+                <div class="carousel-cell product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Elise-Top-Handle-Bag-2.jpg"
+                                alt="Image">
+                            <img class="product-image-2" src="./assets/images/product/Elise-Top-Handle-Bag.jpg"
+                                alt="Image">
                         </a>
-                    </li>
-                    <li class="list-categories-items">
-                        <a href="#">
-                            <img src="/assets/images/categories/hand-bags.png" alt="shoulder-bags">
-                            <span class="category-name">Hand Bags</span>
-                            <span class="category-count-item">22 items</span>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Elise Top Handle Bag</a>
+                        <div class="product-price">
+                            <del>$105.07</del>
+                            <ins>$95.07</ins>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <span class="badge-sale">30%</span>
+                        <span class="badge-new">New</span>
+                    </div>
+                </div>
+                <!--product 4-->
+                <div class="carousel-cell product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Milla-Shoulder-Bag.jpg"
+                                alt="Image">
+                            <img class="product-image-2" src="./assets/images/product/Milla-Shoulder-Bag-2.jpg"
+                                alt="Image">
                         </a>
-                    </li>
-                    <li class="list-categories-items">
-                        <a href="#">
-                            <img src="/assets/images/categories/crossbody-bags.png" alt="shoulder-bags">
-                            <span class="category-name">Crossbody Bags</span>
-                            <span class="category-count-item">22 items</span>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Milla Shoulder Bag</a>
+                        <div class="product-price">
+                            <del class="price-original">$75.00</del>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <!-- <span class="badge-sale">30%</span> -->
+                        <span class="badge-new">New</span>
+                    </div>
+                </div>
+                <!--product 1-->
+                <div class="carousel-cell product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Herman-Shoulder-Bag.jpg"
+                                alt="Image">
+                            <img class="product-image-2" src="./assets/images/product/Herman-Shoulder-Bag-2.jpg"
+                                alt="Image">
                         </a>
-                    </li>
-                </ul>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Herman Shoulder Bag</a>
+                        <div class="product-price">
+                            <del class="price-original">$105.00</del>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <span class="badge-new">New</span>
+                        <!-- <span class="badge-sale">30%</span> -->
+                    </div>
+                </div>
+                <!--product 2-->
+                <div class="carousel-cell product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Jana-Hollow-Out-Shoulder-Bag.jpg"
+                                alt="Image">
+                            <img class="product-image-2"
+                                src="./assets/images/product/Jana-Hollow-Out-Shoulder-Bag-2.jpg" alt="Image">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Jana Hollow Out Shoulder Bag</a>
+                        <div class="product-price">
+                            <del>$60.00</del>
+                            <ins>$45.00</ins>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <!-- <span class="badge-new">New</span> -->
+                        <span class="badge-sale">30%</span>
+                    </div>
+                </div>
+                <!--product 3-->
+                <div class="carousel-cell product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Elise-Top-Handle-Bag-2.jpg"
+                                alt="Image">
+                            <img class="product-image-2" src="./assets/images/product/Elise-Top-Handle-Bag.jpg"
+                                alt="Image">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Elise Top Handle Bag</a>
+                        <div class="product-price">
+                            <del>$105.07</del>
+                            <ins>$95.07</ins>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <span class="badge-sale">30%</span>
+                        <span class="badge-new">New</span>
+                    </div>
+                </div>
+                <!--product 4-->
+                <div class="carousel-cell product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Milla-Shoulder-Bag.jpg"
+                                alt="Image">
+                            <img class="product-image-2" src="./assets/images/product/Milla-Shoulder-Bag-2.jpg"
+                                alt="Image">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Milla Shoulder Bag</a>
+                        <div class="product-price">
+                            <del class="price-original">$75.00</del>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <!-- <span class="badge-sale">30%</span> -->
+                        <span class="badge-new">New</span>
+                    </div>
+                </div>
+                <!--product 1-->
+                <div class="carousel-cell product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Herman-Shoulder-Bag.jpg"
+                                alt="Image">
+                            <img class="product-image-2" src="./assets/images/product/Herman-Shoulder-Bag-2.jpg"
+                                alt="Image">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Herman Shoulder Bag</a>
+                        <div class="product-price">
+                            <del class="price-original">$105.00</del>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <span class="badge-new">New</span>
+                        <!-- <span class="badge-sale">30%</span> -->
+                    </div>
+                </div>
+                <!--product 2-->
+                <div class="carousel-cell product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Jana-Hollow-Out-Shoulder-Bag.jpg"
+                                alt="Image">
+                            <img class="product-image-2"
+                                src="./assets/images/product/Jana-Hollow-Out-Shoulder-Bag-2.jpg" alt="Image">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Jana Hollow Out Shoulder Bag</a>
+                        <div class="product-price">
+                            <del>$60.00</del>
+                            <ins>$45.00</ins>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <!-- <span class="badge-new">New</span> -->
+                        <span class="badge-sale">30%</span>
+                    </div>
+                </div>
+                <!--product 3-->
+                <div class="carousel-cell product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Elise-Top-Handle-Bag-2.jpg"
+                                alt="Image">
+                            <img class="product-image-2" src="./assets/images/product/Elise-Top-Handle-Bag.jpg"
+                                alt="Image">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Elise Top Handle Bag</a>
+                        <div class="product-price">
+                            <del>$105.07</del>
+                            <ins>$95.07</ins>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <span class="badge-sale">30%</span>
+                        <span class="badge-new">New</span>
+                    </div>
+                </div>
+                <!--product 4-->
+                <div class="carousel-cell product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Milla-Shoulder-Bag.jpg"
+                                alt="Image">
+                            <img class="product-image-2" src="./assets/images/product/Milla-Shoulder-Bag-2.jpg"
+                                alt="Image">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Milla Shoulder Bag</a>
+                        <div class="product-price">
+                            <del class="price-original">$75.00</del>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <!-- <span class="badge-sale">30%</span> -->
+                        <span class="badge-new">New</span>
+                    </div>
+                </div>
             </div>
         </section>
-    </main>
+        <section class="banner-sale">
+            <div class="banner-list">
+                <div class="banner-item">
+                    <img src="./assets/images/banner/banner-sale-1a.png" alt="">
+                </div>
+                <div class="banner-item">
+                    <img src="./assets/images/banner/banner-sale-2a.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="trending-products">
+            <div class="section-heading">
+                <h3>Trending Products</h3>
+                <p>Here’s some of our most popular products people are in love with.</p>
+            </div>
+            <div class="product-list">
+                <!--product 1-->
+                <div class="product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Herman-Shoulder-Bag.jpg"
+                                alt="Image">
+                            <img class="product-image-2" src="./assets/images/product/Herman-Shoulder-Bag-2.jpg"
+                                alt="Image">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Herman Shoulder Bag</a>
+                        <div class="product-price">
+                            <del class="price-original">$105.00</del>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <span class="badge-new">New</span>
+                        <!-- <span class="badge-sale">30%</span> -->
+                    </div>
+                </div>
+                <!--product 2-->
+                <div class="product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Jana-Hollow-Out-Shoulder-Bag.jpg"
+                                alt="Image">
+                            <img class="product-image-2"
+                                src="./assets/images/product/Jana-Hollow-Out-Shoulder-Bag-2.jpg" alt="Image">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Jana Hollow Out Shoulder Bag</a>
+                        <div class="product-price">
+                            <del>$60.00</del>
+                            <ins>$45.00</ins>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <!-- <span class="badge-new">New</span> -->
+                        <span class="badge-sale">30%</span>
+                    </div>
+                </div>
+                <!--product 3-->
+                <div class="product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Elise-Top-Handle-Bag-2.jpg"
+                                alt="Image">
+                            <img class="product-image-2" src="./assets/images/product/Elise-Top-Handle-Bag.jpg"
+                                alt="Image">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Elise Top Handle Bag</a>
+                        <div class="product-price">
+                            <del>$105.07</del>
+                            <ins>$95.07</ins>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <span class="badge-sale">30%</span>
+                        <span class="badge-new">New</span>
+                    </div>
+                </div>
+                <!--product 4-->
+                <div class="product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Milla-Shoulder-Bag.jpg"
+                                alt="Image">
+                            <img class="product-image-2" src="./assets/images/product/Milla-Shoulder-Bag-2.jpg"
+                                alt="Image">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Milla Shoulder Bag</a>
+                        <div class="product-price">
+                            <del class="price-original">$75.00</del>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <!-- <span class="badge-sale">30%</span> -->
+                        <span class="badge-new">New</span>
+                    </div>
+                </div>
+                <!--product 5-->
+                <div class="product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Carly-Tote-Bag.jpg" alt="Image">
+                            <img class="product-image-2" src="./assets/images/product/Carly-Tote-Bag-2.jpg" alt="Image">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Carly Tote Bag</a>
+                        <div class="product-price">
+                            <del class="price-original">$75.00</del>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <!-- <span class="badge-sale">30%</span> -->
+                        <span class="badge-new">New</span>
+                    </div>
+                </div>
+                <!--product 6-->
+                <div class="product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Asley-Shoulder-Bag.jpg"
+                                alt="Image">
+                            <img class="product-image-2" src="./assets/images/product/Asley-Shoulder-Bag-2.jpg"
+                                alt="Image">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Asley Shoulder Bag</a>
+                        <div class="product-price">
+                            <del class="price-original">$81.00</del>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <!-- <span class="badge-sale">30%</span> -->
+                        <span class="badge-new">New</span>
+                    </div>
+                </div>
+                <!--product 7-->
+                <div class="product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Milla-Black-Tote-Bag.jpg"
+                                alt="Image">
+                            <img class="product-image-2" src="./assets/images/product/Milla-Black-Tote-Bag-2.jpg"
+                                alt="Image">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Milla Black Tote Bag</a>
+                        <div class="product-price">
+                            <del>$105.07</del>
+                            <ins>$95.07</ins>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <span class="badge-sale">30%</span>
+                        <!-- <span class="badge-new">New</span> -->
+                    </div>
+                </div>
+                <!--product 8-->
+                <div class="product">
+                    <div class="product-image">
+                        <a href="">
+                            <img class="product-image-1" src="./assets/images/product/Elsa-Shoulder-Bag.jpg"
+                                alt="Image">
+                            <img class="product-image-2" src="./assets/images/product/Elsa-Shoulder-Bag-2.jpg"
+                                alt="Image">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a class="product-name" href="#">Elsa Shoulder Bag</a>
+                        <div class="product-price">
+                            <del class="price-original">$75.00</del>
+                        </div>
+                    </div>
+                    <!--product actions-->
+                    <div class="slide-in-left">
+                        <button class="btn-wishlist" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Add to wishlist">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_674)">
+                                    <path
+                                        d="M9 3.99964C7 -0.000363111 1 1.84964 1 5.99964C1 10.1496 4 13.9996 9 16.9996C14 13.9996 17 10.0696 17 5.99964C17 1.92964 11 -0.000363111 9 3.99964Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_674">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="btn-quick-view" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Quick view">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6716_627)">
+                                    <path
+                                        d="M16.9 9C16.9 9 14 15 8.99998 15C3.99998 15 1.09998 9 1.09998 9C1.09998 9 3.99998 3 8.99998 3C14 3 16.9 9 16.9 9Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+                                        stroke="#515167" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6716_627">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slide-in-top">
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                    <!--end product actions-->
+                    <div class="product-badge">
+                        <!-- <span class="badge-sale">30%</span> -->
+                        <span class="badge-new">New</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
 </body>
-<script src="/assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="/assets/js/main.js"></script>
 
 </html>
