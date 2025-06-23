@@ -30,6 +30,14 @@ document.addEventListener('DOMContentLoaded', function () {
         wrapAround: true,
         prevNextButtons: false,
     });
+    var flkty = new Flickity('.feature-items-list', {
+        cellAlign: 'left',
+        contain: true,
+        groupCells: true,
+        pageDots: true,
+        wrapAround: true,
+        prevNextButtons: true,
+    });
 
     // tooltip js
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))

@@ -327,9 +327,11 @@
 .new-arrivals {
     padding-bottom: 177px;
 }
+
 .product-list {
     width: 100%;
 }
+
 .product-list .product {
     width: 25%;
     padding: 0 10px;
@@ -401,13 +403,16 @@ ins {
     position: relative;
     width: 100%;
 }
+
 .product-image a img {
     width: 100%;
 }
+
 .product-image-1 {
     opacity: 1;
     transition: opacity 0.4s ease;
 }
+
 .product-image-2 {
     opacity: 0;
     position: absolute;
@@ -416,6 +421,7 @@ ins {
     width: 100%;
     transition: opacity 0.4s ease;
 }
+
 .product-image a:hover .product-image-1 {
     opacity: 0;
 }
@@ -496,6 +502,7 @@ ins {
     vertical-align: middle;
     transition: all 0.3s ease;
 }
+
 .btn-add-to-cart:hover {
     background-color: #131728;
     color: #ffffff;
@@ -515,6 +522,7 @@ ins {
     transform: translateX(150%);
     opacity: 0;
 }
+
 .btn-add-to-cart,
 .btn-wishlist,
 .btn-quick-view {
@@ -524,6 +532,7 @@ ins {
 .carousel-cell:hover .slide-in-left {
     opacity: 1;
 }
+
 .carousel-cell:hover .btn-wishlist {
     opacity: 1;
     transform: translateX(0);
@@ -535,13 +544,16 @@ ins {
     transform: translateX(0);
     transition-delay: 0.05s;
 }
+
 .carousel-cell:hover .slide-in-top {
     opacity: 1;
     transform: translateY(0);
 }
+
 .product-list .flickity-page-dots {
     bottom: -45px !important;
 }
+
 .product-list .flickity-page-dots .dot {
     display: inline-block;
     width: 10px;
@@ -567,11 +579,13 @@ ins {
     width: 100%;
 
 }
+
 .banner-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+
 .banner-item img {
     width: 100%;
 }
@@ -625,6 +639,94 @@ ins {
     opacity: 1;
 }
 
+/* feature items */
+
+.feature-items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.feature-items-slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-items-slider .section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.feature-items-slider .section-heading h3 {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.feature-items-slider .flickity-prev-next-button.next {
+    right: -71.5px;
+}
+
+.feature-items-slider .flickity-prev-next-button.previous {
+    left: -71.5px;
+}
+
+.feature-items-list {
+    max-width: 345px;
+    height: 416px;
+    box-shadow: 1px 1px 8px 0px #00000026;
+}
+
+.feature-items-list .product {
+    width: 100%;
+}
+
+.feature-items-images {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-items-images img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.feature-items-list .flickity-page-dots {
+    bottom: -40px !important;
+}
+
+.feature-items-list .flickity-page-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    border-radius: 50%;
+    opacity: .25;
+    cursor: pointer;
+}
+
+.feature-items-list .flickity-page-dots .dot .is-selected {
+    opacity: 1;
+    width: 10px;
+    border-radius: 50px;
+    background-color: #222222;
+    opacity: .25;
+    cursor: pointer;
+}
 
 /* instagram-shop */
 .instagram-shop {
@@ -632,6 +734,7 @@ ins {
     max-width: 1920px;
     padding-bottom: 120px;
 }
+
 .list-gallery {
     width: 100%;
     padding-left: 50px;
@@ -639,13 +742,16 @@ ins {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 }
+
 .gallery {
     width: 100%;
     padding: 0 10px;
 }
+
 .gallery img {
     width: 100%;
 }
+
 /* iPad/Tablets nhỏ (768px - 1023px) */
 @media screen and (max-width: 1024px) {
     .header {
@@ -747,9 +853,11 @@ ins {
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
     }
+
     .category-image {
         max-height: 200px;
     }
+
     .category-name {
         font-size: 16px;
         margin-top: 12px;
@@ -948,6 +1056,7 @@ ins {
     .item-count {
         font-size: 11px;
     }
+
     .banner-list {
         grid-template-columns: repeat(1, 1fr);
     }
