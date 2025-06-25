@@ -662,6 +662,7 @@ ins {
     text-align: center;
     margin-bottom: 30px;
 }
+
 .feature-items-slider .section-heading h3 {
     padding: 0;
     margin: 0;
@@ -750,6 +751,56 @@ ins {
 
 .gallery img {
     width: 100%;
+}
+
+
+/* support section */
+
+.support-section {
+    width: 100%;
+    max-width: 1920px;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.support-section_option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+
+.option_heading_icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.support-section_option_heading h6 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.support-section_option_heading span {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #696969;
 }
 
 /* iPad/Tablets nhỏ (768px - 1023px) */
