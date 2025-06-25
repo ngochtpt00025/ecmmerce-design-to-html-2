@@ -771,6 +771,12 @@ ins {
     align-items: center;
     text-align: center;
     gap: 24px;
+    padding: 120px 0;
+}
+
+.support-section_option:not(:last-child) {
+    border-right: #00000026 1px solid;
+    border-color: var(--neutral-colors-400-day, #7C99A9);
 }
 
 .option_heading_icon {
@@ -779,6 +785,7 @@ ins {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     margin-bottom: 16px;
 }
 
@@ -803,6 +810,206 @@ ins {
     color: #696969;
 }
 
+.btn-chat-now,
+.btn-find-locator {
+    padding: 14px 32px;
+    gap: 4px;
+    border-radius: 100px;
+    background-color: #222222;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+
+.btn-call {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #7C99A8;
+    background: #fff;
+    transition: background 0.2s, border-color 0.2s;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.btn-call svg {
+    display: block;
+    margin: 0 auto;
+    fill: #515167;
+}
+
+.btn-call:hover {
+    background: #f5fafd;
+    border-color: #515167;
+}
+
+.support-section_option_button {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-call svg {
+    vertical-align: middle;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    max-width: 1920px;
+    background-color: #F6F6F8;
+}
+
+.ft-container {
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.footer-top {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+.footer-top_item {
+    width: 100%;
+    max-width: 210px;
+}
+
+.sign-up-newsletter {
+    width: 100%;
+    max-width: 420px;
+}
+
+.footer-top_item h6 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #222222;
+    margin-bottom: 32px;
+}
+
+.footer-top_item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-top_item ul li a {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #696969;
+    text-decoration: none;
+}
+
+.sign-up-newsletter ul li {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #696969;
+}
+
+.form-sign-up-newsletter {
+    margin: 13px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 16px;
+    gap: 16px;
+    border: 1px solid var(--neutral-colors-200-day, #CDD0DD)
+}
+
+.form-sign-up-newsletter input {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.form-sign-up-newsletter button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-right: 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    background-color: #ffffff;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.footer-bottom_item p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: #696969;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-bottom_item p a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: #222222;
+}
+
+.footer-bottom_item .menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #222222;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    transition: all .2s ease;
+}
+.menu li a:hover {
+    color: #74d7e6;
+}
+
 /* iPad/Tablets nhỏ (768px - 1023px) */
 @media screen and (max-width: 1024px) {
     .header {
@@ -815,7 +1022,7 @@ ins {
     }
 
     .header-menu {
-        gap: 15 px;
+        gap: 15px;
     }
 
     .header-menu-item-link {
