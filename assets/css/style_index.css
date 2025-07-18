@@ -83,7 +83,17 @@
 .icon {
     position: relative;
 }
-
+.offcanvas-top {
+    z-index: 1056 !important;
+    transform: translateY(-100%);
+    transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.offcanvas-backdrop {
+    z-index: 1050 !important;
+}
+.offcanvas-top.show {
+    transform: translateY(0);
+}
 .icon svg {
     width: 24px;
     height: 24px;
@@ -94,7 +104,11 @@
     cursor: pointer;
     transform: scale(1.25);
 }
-
+.icon-search {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
 .badgee {
     width: 18px;
     height: 18px;
@@ -757,6 +771,8 @@ ins {
 
 /* support section */
 
+/* support section */
+
 .support-section {
     width: 100%;
     max-width: 1920px;
@@ -764,7 +780,6 @@ ins {
     padding-right: 70px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 0 auto;
 }
 
 .support-section_option {
@@ -861,6 +876,7 @@ ins {
 .btn-call svg {
     vertical-align: middle;
 }
+
 
 /* footer */
 
@@ -1014,7 +1030,7 @@ ins {
 }
 
 /* iPad/Tablets nhỏ (768px - 1023px) */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
     .header {
         width: 100%;
     }
@@ -1137,6 +1153,146 @@ ins {
     .trending-products .product-list {
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
+    }
+    /* Feature Items */
+    .feature-items {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .feature-items-slider .section-heading h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .feature-items-list .product {
+        width: 100%;
+    }
+
+    .feature-items-images img {
+        max-width: 500px;
+    }
+
+    /* Instagram Shop */
+    .instagram-shop {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .instagram-shop .section-heading h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .instagram-shop .section-heading p {
+        font-size: 14px;
+    }
+
+    .list-gallery {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .gallery img {
+        max-height: 200px;
+    }
+
+    /* Support Section */
+    .support-section {
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .support-section_option {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .support-section_option_heading h6 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .support-section_option_heading span {
+        font-size: 14px;
+    }
+
+    .option_heading_icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .btn-chat-now,
+    .btn-find-locator {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    .btn-call {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Footer */
+    .footer {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer-top {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        padding: 60px 20px;
+    }
+
+    .sign-up-newsletter {
+        grid-column: span 3;
+        text-align: center;
+    }
+
+    .footer-top_item h6 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .footer-top_item ul li a {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .form-sign-up-newsletter {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .form-sign-up-newsletter input {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .form-sign-up-newsletter button {
+        width: 45px;
+        height: 45px;
+    }
+
+    .footer-bottom {
+        padding: 30px 20px;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-bottom_item p {
+        font-size: 14px;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .menu li a {
+        font-size: 14px;
     }
 }
 
@@ -1331,152 +1487,12 @@ ins {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
-}
-
-@media screen and (max-width: 1024px) {
-    /* Feature Items */
-    .feature-items {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-
-    .feature-items-slider .section-heading h3 {
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
-
-    .feature-items-list .product {
-        width: 33.33%;
-    }
-
-    .feature-items-images img {
-        max-width: 300px;
-    }
-
-    /* Instagram Shop */
-    .instagram-shop {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-
-    .instagram-shop .section-heading h3 {
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
-
-    .instagram-shop .section-heading p {
-        font-size: 14px;
-    }
-
-    .list-gallery {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 15px;
-    }
-
-    .gallery img {
-        max-height: 200px;
-    }
-
-    /* Support Section */
-    .support-section {
-        padding: 60px 20px;
-    }
-
-    .support-section_option {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-
-    .support-section_option_heading h6 {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-
-    .support-section_option_heading span {
-        font-size: 14px;
-    }
-
-    .option_heading_icon svg {
-        width: 24px;
-        height: 24px;
-    }
-
-    .btn-chat-now,
-    .btn-find-locator {
-        padding: 12px 25px;
-        font-size: 14px;
-    }
-
-    .btn-call {
-        width: 35px;
-        height: 35px;
-    }
-
-    /* Footer */
-    .footer-top {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 40px;
-        padding: 60px 20px;
-    }
-
-    .sign-up-newsletter {
-        grid-column: span 3;
-        text-align: center;
-    }
-
-    .footer-top_item h6 {
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
-
-    .footer-top_item ul li a {
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    .form-sign-up-newsletter {
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    .form-sign-up-newsletter input {
-        padding: 12px 15px;
-        font-size: 14px;
-    }
-
-    .form-sign-up-newsletter button {
-        width: 45px;
-        height: 45px;
-    }
-
-    .footer-bottom {
-        padding: 30px 20px;
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-
-    .footer-bottom_item p {
-        font-size: 14px;
-    }
-
-    .menu {
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .menu li a {
-        font-size: 14px;
-    }
-}
-
-/* Mobile/iPhone (767px trở xuống) */
-@media screen and (max-width: 768px) {
     /* Feature Items */
     .feature-items {
         padding-top: 60px;
         padding-bottom: 60px;
+        display: flex;
+        flex-direction: column;
     }
 
     .feature-items-slider .section-heading h3 {
@@ -1485,7 +1501,7 @@ ins {
     }
 
     .feature-items-list .product {
-        width: 50%;
+        width: 100%;
     }
 
     .feature-items-images {
@@ -1494,7 +1510,7 @@ ins {
     }
 
     .feature-items-images img {
-        max-width: 250px;
+        max-width: 350px;
         width: 100%;
     }
 
@@ -1640,72 +1656,100 @@ ins {
 
 @media screen and (max-width: 480px) {
     /* Feature Items */
+    .feature-items {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        padding: 0 8px;
+    }
+    .feature-items-list {
+        max-width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
     .feature-items-list .product {
         width: 100%;
+        margin-bottom: 12px;
     }
-
     .feature-items-images img {
-        max-width: 200px;
-    }
-
-    /* Instagram Shop */
-    .list-gallery {
-        grid-template-columns: 1fr;
-        gap: 8px;
-    }
-
-    .gallery img {
-        max-height: 120px;
+        max-width: 160px;
+        width: 100%;
+        margin: 0 auto;
     }
 
     /* Support Section */
+    .support-section {
+        grid-template-columns: 1fr;
+        padding: 16px 4px;
+        gap: 12px;
+    }
+    .support-section_option {
+        padding: 18px 0;
+        gap: 10px;
+    }
     .support-section_option_heading h6 {
-        font-size: 14px;
+        font-size: 13px;
+        margin-bottom: 6px;
     }
-
     .support-section_option_heading span {
-        font-size: 11px;
+        font-size: 10px;
     }
-
     .btn-chat-now,
     .btn-find-locator {
-        padding: 8px 15px;
-        font-size: 11px;
+        padding: 6px 10px;
+        font-size: 10px;
     }
-
     .btn-call {
-        width: 28px;
-        height: 28px;
+        width: 24px;
+        height: 24px;
     }
 
     /* Footer */
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 18px 4px;
+    }
+    .footer-top_item,
+    .sign-up-newsletter {
+        max-width: 100%;
+        text-align: center;
+    }
     .footer-top_item h6 {
-        font-size: 14px;
-    }
-
-    .footer-top_item ul li a {
         font-size: 12px;
+        margin-bottom: 8px;
     }
-
+    .footer-top_item ul li a {
+        font-size: 10px;
+    }
     .sign-up-newsletter ul li {
-        font-size: 11px;
+        font-size: 10px;
     }
-
     .form-sign-up-newsletter input {
-        padding: 8px 10px;
-        font-size: 11px;
+        padding: 6px 6px;
+        font-size: 10px;
     }
-
     .form-sign-up-newsletter button {
-        width: 35px;
-        height: 35px;
+        width: 28px;
+        height: 28px;
     }
-
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px 4px;
+        text-align: center;
+    }
     .footer-bottom_item p {
-        font-size: 11px;
+        font-size: 10px;
     }
-
+    .menu {
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
     .menu li a {
-        font-size: 11px;
+        font-size: 10px;
     }
 }
